@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descifrado Cesar</title>
+    <!-- Enlazamos con los archivos de estilo y JS -->
+    <link href="index.css" rel="stylesheet " />
+    <script src="descifrar.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <main>
+        <!-- Titulo del formulario -->
+        <h1>Descifrar Cesar</h1>
+        <form id="cifrador" autocomplete="off">
+            <!-- Input donde el usuario escribirá su nombre y apellido -->
+            <input id="input-original" spellcheck="false" placeholder="Ingresa tu Nombre y Apellido" type="text" name="text">
+        </form>
+        <!-- En este div se mostrará el texto cifrado -->
+        <div id="resultado"></div>
+        <div class="rango">
+            <!-- Barra de rango - Cambia las posiciones en el alfabeto que se recorren -->
+            <input id="rango" type="range" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+            <output>10</output>
+        </div>
+        <br>
+        <div class="panel">
+            <a href="cifrar.html">Cifrar</a>
+        </div> 
+    </main>
+</body>
+</html>
